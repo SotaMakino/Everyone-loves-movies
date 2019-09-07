@@ -1,39 +1,36 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const path = require('path');
-const dist = path.join(__dirname, 'dist')
+const path = require('path')
+const dist = path.join(__dirname, 'dist');
 
 module.exports = {
   entry: './src/index.tsx',
   output: {
     path: dist,
-    filename: 'index_bundle.js'
+    filename: 'bundle.js'
+  },
+  module: {
+    rules: [{
+        test: /\.tsx?$/,
+        loader: 'ts-loader'
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        loader: 'url-loader'
+      },
+    ]
   },
   resolve: {
     modules: ['node_modules'],
     extensions: [".ts", ".tsx", '.js', '.jsx']
   },
-  module: {
-    rules: [{
-        test: /\.ts(x?)$/,
-        exclude: /node_modules/,
-        use: [{
-          loader: "ts-loader"
-        }]
-      },
-      {
-        enforce: "pre",
-        test: /\.js$/
-      }
-    ]
-  },
-  externals: {
-    "react": "React",
-    "react-dom": "ReactDOM"
+  devServer: {
+    contentBase: dist,
+    compress: true,
+    port: 9000
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
-      filename: "./index.html"
+      template: "./src/index.html"
     })
   ]
 };
