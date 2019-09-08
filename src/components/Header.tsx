@@ -33,6 +33,7 @@ const Logo = styled.img`
 `;
 const Link = styled.div`
   margin: 35px 20px;
+  user-select: none;
 `;
 const Popup = styled.div`
   line-height: 36px;
