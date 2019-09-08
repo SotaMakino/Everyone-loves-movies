@@ -8,46 +8,66 @@ const Main = () => {
       <HeadingWrapper>
         <BackgroundImg>
           <SubWrapper>
-            <Heading>Completely New Tourism</Heading>
+            <Heading>The Future of Tourism</Heading>
             <SubTitle>
-              Changing the concept of tourism, a new era is coming
+              Changing the concept of tourism, a new era is coming.
             </SubTitle>
           </SubWrapper>
         </BackgroundImg>
       </HeadingWrapper>
 
       <AboutWrapper>
-        <Title>Potato</Title>
-        <About>about</About>
+        <Title>Potato, New Tour Guide Service</Title>
+        <About>
+          Traditional tour guides are expensive and taking a long time. Our
+          guides are free to use anywhere and any time. A knowledgeable and
+          experienced guide is on standby at a popular spot. Use our guides to
+          stop superficial sightseeing and enjoy more meaningful sightseeing at
+          a low price.
+        </About>
+        <Slogan>Catch our Guides to make your trip Rich</Slogan>
       </AboutWrapper>
     </>
   );
 };
 
 const HeadingWrapper = styled.div`
-  height: 700px;
+  height: 800px;
 `;
 const BackgroundImg = styled.div`
   background-image: url(${bgGreen});
   background-attachment: fixed;
-  width: 100%;
-  height: 67.3%;
+  background-size: 100%;
 `;
 const SubWrapper = styled.div`
+  padding-top: 130px;
+  height: 350px;
   text-align: center;
-  padding-top: 180px;
 `;
 const Heading = styled.h1`
   color: white;
+  font-size: 50px;
 `;
 const SubTitle = styled.h2`
   color: white;
 `;
 const AboutWrapper = styled.div`
-  margin-top: -200px;
+  margin: -300px 80px 0 80px;
   height: 400px;
 `;
-const Title = styled.h2``;
-const About = styled.p``;
+const Title = styled.h2`
+  text-align: center;
+  font-size: 40px;
+`;
+const About = styled.p`
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-ideograph;
+`;
+const Slogan = styled.p`
+  padding-top: 50px;
+  font-size: 25px;
+  text-align: center;
+`;
 
 export default Main;
