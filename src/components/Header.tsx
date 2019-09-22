@@ -26,6 +26,8 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: 500;
 `;
 const Logo = styled.img`
   width: 100px;
@@ -44,6 +46,7 @@ const Popup = styled.div`
   text-align: center;
   color: #fff;
   font-size: 15px;
+  font-weight: 700;
   background: #ff8e9d;
   border-radius: 40px;
 `;

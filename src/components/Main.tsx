@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import bgGreen from '../assets/bg-pink.jpg';
+import bgPink from '../assets/bg-pink.jpg';
 
 const Main = () => {
   return (
@@ -20,12 +20,11 @@ const Main = () => {
         <Title>Potato, New Tour Guide Service</Title>
         <About>
           Traditional tour guides are expensive and taking a long time. Our
-          guides are free to use anywhere and any time. A knowledgeable and
-          experienced guide is on standby at a popular spot. Use our guides to
-          stop superficial sightseeing and enjoy more meaningful sightseeing at
-          a low price.
+          guides are free to use anywhere and any time. Knowledgeable and
+          experienced guides are on standby at popular spots. Use our guides to
+          stop superficial sightseeing and make it meaningful at a low price.
         </About>
-        <Slogan>Catch our Guides to make your trip Rich</Slogan>
+        <Slogan>“Catch our Guides to make your trip Rich.”</Slogan>
       </AboutWrapper>
     </>
   );
@@ -35,7 +34,7 @@ const HeadingWrapper = styled.div`
   height: 800px;
 `;
 const BackgroundImg = styled.div`
-  background-image: url(${bgGreen});
+  background-image: url(${bgPink});
   background-attachment: fixed;
   background-size: 100%;
 `;
@@ -46,13 +45,15 @@ const SubWrapper = styled.div`
 `;
 const Heading = styled.h1`
   color: white;
-  font-size: 50px;
+  font-size: 65px;
+  font-weight: 700;
 `;
 const SubTitle = styled.h2`
+  font-size: 33px;
   color: white;
 `;
 const AboutWrapper = styled.div`
-  margin: -300px 80px 0 80px;
+  margin: -220px 148px 0 148px;
   height: 400px;
 `;
 const Title = styled.h2`
