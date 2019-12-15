@@ -2,33 +2,31 @@ import React from 'react';
 import styled from 'styled-components';
 import bgPink from '../assets/bg-pink.jpg';
 
-const Main = () => {
-  return (
-    <>
-      <HeadingWrapper>
-        <BackgroundImg>
-          <SubWrapper>
-            <Heading>The Future of Tourism</Heading>
-            <SubTitle>
-              Changing the concept of tourism, a new era is coming.
-            </SubTitle>
-          </SubWrapper>
-        </BackgroundImg>
-      </HeadingWrapper>
+const Main = () => (
+  <>
+    <HeadingWrapper>
+      <BackgroundImg>
+        <SubWrapper>
+          <Heading>The Future of Tourism</Heading>
+          <SubTitle>
+            Changing the concept of tourism, a new era is coming.
+          </SubTitle>
+        </SubWrapper>
+      </BackgroundImg>
+    </HeadingWrapper>
 
-      <AboutWrapper>
-        <Title>Potato, New Tour Guide Service</Title>
-        <About>
-          Traditional tour guides are expensive and taking a long time. Our
-          guides are free to use anywhere and any time. Knowledgeable and
-          experienced guides are on standby at popular spots. Use our guides to
-          stop superficial sightseeing and make it meaningful at a low price.
-        </About>
-        <Slogan>“Catch our Guides to make your trip Rich.”</Slogan>
-      </AboutWrapper>
-    </>
-  );
-};
+    <AboutWrapper>
+      <Title>Potato, New Tour Guide Service</Title>
+      <About>
+        Traditional tour guides are expensive and taking a long time. Our guides
+        are free to use anywhere and any time. Knowledgeable and experienced
+        guides are on standby at popular spots. Use our guides to stop
+        superficial sightseeing and make it meaningful at a low price.
+      </About>
+      <Slogan>“Catch our Guides to make your trip Rich.”</Slogan>
+    </AboutWrapper>
+  </>
+);
 
 const HeadingWrapper = styled.div`
   height: 800px;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from '../assets/potato-logo.png';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import logo from '../assets/potato-logo.png';
 
 const Header = () => {
   const [isCopied, setIsCopied] = React.useState<boolean>(false);
