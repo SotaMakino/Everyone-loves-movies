@@ -3,17 +3,18 @@ import styled from 'styled-components';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import logo from '../assets/potato-logo.png';
 
-const Header = () => {
+const Header: React.SFC = () => {
   const [isCopied, setIsCopied] = React.useState<boolean>(false);
+  const handleClick = React.useCallback(() => {
+    setIsCopied(!isCopied);
+  }, []);
+
   return (
     <Wrapper>
       <Logo src={logo} alt="logo" />
       {isCopied ? <Popup>Email Copied!</Popup> : null}
       <LinkWrapper>
-        <CopyToClipboard
-          text="sm96kyoto@gmail.com"
-          onCopy={() => setIsCopied(true)}
-        >
+        <CopyToClipboard text="sm96kyoto@gmail.com" onCopy={handleClick}>
           <span>Contact</span>
         </CopyToClipboard>
       </LinkWrapper>
