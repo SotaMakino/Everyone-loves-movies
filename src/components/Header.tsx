@@ -5,19 +5,18 @@ import logo from '../assets/potato-logo.png';
 
 const Header = () => {
   const [isCopied, setIsCopied] = React.useState<boolean>(false);
-
   return (
     <Wrapper>
       <Logo src={logo} alt="logo" />
       {isCopied ? <Popup>Email Copied!</Popup> : null}
-      <Link>
+      <LinkWrapper>
         <CopyToClipboard
           text="sm96kyoto@gmail.com"
           onCopy={() => setIsCopied(true)}
         >
           <span>Contact</span>
         </CopyToClipboard>
-      </Link>
+      </LinkWrapper>
     </Wrapper>
   );
 };
@@ -33,7 +32,7 @@ const Logo = styled.img`
   width: 100px;
   margin-left: 30px;
 `;
-const Link = styled.div`
+const LinkWrapper = styled.div`
   margin: 35px 20px;
   user-select: none;
 `;
