@@ -24,7 +24,7 @@ const FirstView = () => {
 
 const Wrapper = styled.div``;
 const TitleMessages = styled.div`
-  padding-top: 100px;
+  padding-top: 30px;
   text-align: center;
   font-style: italic;
   font-size: 60px;
@@ -41,18 +41,19 @@ const ImageWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 `;
 const Image = styled.img`
   width: 40%;
   height: auto;
+  margin-top: -50px;
+  z-index: -1;
 `;
 const DownloadWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 40px;
 `;
 const DownloadIcon = styled.img``;
 
