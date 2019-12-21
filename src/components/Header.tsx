@@ -17,6 +17,7 @@ const Wrapper = styled.div`
   font-weight: 500;
 `;
 const Logo = styled.p`
+  color: #22c1c3;
   font-weight: 800;
   font-size: 30px;
   width: 100px;

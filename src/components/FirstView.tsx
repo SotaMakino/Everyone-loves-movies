@@ -7,17 +7,13 @@ import GooglePlay from '../assets/google-play-badge.png';
 const FirstView = () => {
   return (
     <Wrapper>
-      <TitleMessages>
+      <MessageWrapper>
         <Message>Finished packing?</Message>
         <AnimatedMessage>Get a Tour Guide!</AnimatedMessage>
-      </TitleMessages>
+      </MessageWrapper>
       <DownloadWrapper>
-        <DownloadIcon style={{ width: '220px' }} src={AppStore} alt="" />
-        <DownloadIcon
-          style={{ width: '253px', height: '108px' }}
-          src={GooglePlay}
-          alt=""
-        />
+        <DownloadIcon style={{ width: '24%' }} src={GooglePlay} alt="" />
+        <DownloadIcon style={{ width: '19%' }} src={AppStore} alt="" />
       </DownloadWrapper>
       <ImageWrapper>
         <Image src={BagImage} />
@@ -27,15 +23,15 @@ const FirstView = () => {
 };
 
 const Wrapper = styled.div``;
-const TitleMessages = styled.div`
+const MessageWrapper = styled.div`
   text-align: center;
   font-size: 65px;
   font-weight: 700;
   user-select: none;
 `;
 const Message = styled.p`
-  color: #006591;
-  padding-top: 15px;
+  color: #22c1c3;
+  padding-top: 20px;
   margin: 20px;
 `;
 const Shine = keyframes`
@@ -48,9 +44,9 @@ const AnimatedMessage = styled.p`
   display: inline;
   background: linear-gradient(
     to right,
-    rgba(0, 101, 145, 1) 0%,
-    rgba(77, 170, 228, 1) 52%,
-    rgba(0, 101, 145, 1)
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 52%,
+    rgba(34, 193, 195, 1)
   );
   background-size: 200% auto;
 
