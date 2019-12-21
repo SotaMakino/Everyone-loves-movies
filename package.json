@@ -21,6 +21,7 @@
     "react": "^16.8.6",
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.8.6",
+    "react-gradient-text": "^0.1.0",
     "react-router-dom": "^5.0.1",
     "styled-components": "^4.3.2",
     "webpack": "^4.35.0",

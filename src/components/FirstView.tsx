@@ -8,13 +8,13 @@ const FirstView = () => {
   return (
     <Wrapper>
       <TitleMessages>
-        <Message>Packing finished?</Message>
-        <GuideWrapper>Get a Tour Guide.</GuideWrapper>
-        <DownloadWrapper>
-          <DownloadIcon style={{ width: '220px' }} src={AppStore} alt="" />
-          <DownloadIcon style={{ width: '253px' }} src={GooglePlay} alt="" />
-        </DownloadWrapper>
+        <Message>Finished packing?</Message>
+        <Message>Get a Tour Guide.</Message>
       </TitleMessages>
+      <DownloadWrapper>
+        <DownloadIcon style={{ width: '220px' }} src={AppStore} alt="" />
+        <DownloadIcon style={{ width: '253px' }} src={GooglePlay} alt="" />
+      </DownloadWrapper>
       <ImageWrapper>
         <Image src={BagImage} />
       </ImageWrapper>
@@ -24,17 +24,15 @@ const FirstView = () => {
 
 const Wrapper = styled.div``;
 const TitleMessages = styled.div`
-  padding-top: 30px;
+  padding-top: 10px;
   text-align: center;
   font-style: italic;
   font-size: 60px;
   font-weight: 700;
+  user-select: none;
 `;
 const Message = styled.p`
   margin: 20px;
-`;
-const GuideWrapper = styled.p`
-  display: inline;
 `;
 const ImageWrapper = styled.div`
   display: flex;
@@ -45,7 +43,7 @@ const ImageWrapper = styled.div`
 const Image = styled.img`
   width: 40%;
   height: auto;
-  margin-top: -50px;
+  margin-top: -60px;
   z-index: -1;
 `;
 const DownloadWrapper = styled.div`
@@ -53,7 +51,7 @@ const DownloadWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 15px;
 `;
 const DownloadIcon = styled.img``;
 
