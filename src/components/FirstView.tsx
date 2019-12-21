@@ -13,7 +13,11 @@ const FirstView = () => {
       </TitleMessages>
       <DownloadWrapper>
         <DownloadIcon style={{ width: '220px' }} src={AppStore} alt="" />
-        <DownloadIcon style={{ width: '253px' }} src={GooglePlay} alt="" />
+        <DownloadIcon
+          style={{ width: '253px', height: '108px' }}
+          src={GooglePlay}
+          alt=""
+        />
       </DownloadWrapper>
       <ImageWrapper>
         <Image src={BagImage} />
@@ -24,10 +28,10 @@ const FirstView = () => {
 
 const Wrapper = styled.div``;
 const TitleMessages = styled.div`
-  padding-top: 10px;
+  padding-top: 15px;
   text-align: center;
   font-style: italic;
-  font-size: 60px;
+  font-size: 65px;
   font-weight: 700;
   user-select: none;
 `;
@@ -41,17 +45,16 @@ const ImageWrapper = styled.div`
   align-items: center;
 `;
 const Image = styled.img`
-  width: 40%;
+  width: 41%;
   height: auto;
-  margin-top: -60px;
+  margin-top: -120px;
   z-index: -1;
 `;
 const DownloadWrapper = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 15px;
+  padding-top: 12px;
 `;
 const DownloadIcon = styled.img``;
 
