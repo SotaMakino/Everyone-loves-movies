@@ -1,19 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import Footer from './Footer';
-import Main from './Main';
-import Header from './Header';
+import FirstView from './FirstView';
 
-const App: React.SFC = () => (
+const App = () => (
   <Wrapper>
-    <Header />
-    <Main />
+    <FirstView />
     <Footer />
   </Wrapper>
 );
 
-const Wrapper = styled.div`
-  margin: 0 -10px;
-`;
+const Wrapper = styled.div``;
 
 export default App;

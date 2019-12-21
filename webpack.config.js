@@ -1,5 +1,6 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+
 const dist = path.join(__dirname, 'dist');
 
 module.exports = {
@@ -9,7 +10,8 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.tsx?$/,
         loader: 'ts-loader'
       },
@@ -18,14 +20,18 @@ module.exports = {
         loader: 'url-loader'
       },
       {
-        test: /\.css$/,
-        loaders: ['style-loader', 'css-loader'],
+        test: /\.svg$/i,
+        loader: 'svg-url-loader'
       },
+      {
+        test: /\.css$/,
+        loaders: ['style-loader', 'css-loader']
+      }
     ]
   },
   resolve: {
     modules: ['node_modules'],
-    extensions: [".ts", ".tsx", '.js', '.jsx']
+    extensions: ['.ts', '.tsx', '.js', '.jsx']
   },
   devServer: {
     contentBase: dist,
@@ -34,7 +40,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html"
+      template: './src/index.html'
     })
   ]
 };
