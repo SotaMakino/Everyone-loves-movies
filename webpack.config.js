@@ -40,6 +40,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      favicon: './src/assets/apple-touch-icon.png',
       template: './src/index.html'
     })
   ]
