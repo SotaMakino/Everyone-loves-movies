@@ -17,12 +17,17 @@ const Wrapper = styled.div`
   font-weight: 500;
 `;
 const Logo = styled.p`
-  color: #22c1c3;
+  color: #000;
   font-weight: 800;
   font-size: 30px;
   width: 100px;
   margin-left: 30px;
   user-select: none;
+
+  @media (max-width: 980px) {
+    font-size: 60px;
+    padding-top: 50px;
+  }
 `;
 
 export default Header;
