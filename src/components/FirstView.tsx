@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import Header from './Header';
 import Footer from './Footer';
 import Invitation from './Invitation';
@@ -10,7 +10,7 @@ const FirstView = () => {
       <Header />
       <MessageWrapper>
         <Message>Finished packing?</Message>
-        <AnimatedMessage>Get a Tour Guide!</AnimatedMessage>
+        <PrimaryMessage>Get a Tour Guide!</PrimaryMessage>
         <Description>
           Come and lean Kyoto in a small group.
           <tr />
@@ -36,32 +36,13 @@ const MessageWrapper = styled.div`
 `;
 const Message = styled.p`
   color: #000;
-  font-size: 65px;
+  font-size: 72px;
   padding-top: 40px;
   margin: 0px;
 `;
-const Shine = keyframes`
-  to {
-      background-position: 200% center;
-  }
-`;
-const AnimatedMessage = styled.p`
+const PrimaryMessage = styled.p`
   font-size: 85px;
-  display: inline;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 1) 100%,
-    rgba(255, 185, 33, 1) 52%,
-    rgba(0, 0, 0, 1)
-  );
-  background-size: 200% auto;
-
-  color: #000;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  animation: ${Shine} 4s linear infinite;
+  margin: 0;
 `;
 const Description = styled.p`
   font-size: 22px;

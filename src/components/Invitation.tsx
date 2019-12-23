@@ -36,6 +36,8 @@ const IconImage = styled.img`
   width: 70px;
   vertical-align: middle;
   padding-right: 20px;
+  user-select: none;
+  -webkit-user-drag: none;
 `;
 const ButtonTitle = styled.span`
   font-size: 26px;
