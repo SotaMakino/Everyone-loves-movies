@@ -27,7 +27,7 @@ const Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #a7ffeb;
 `;
 const MessageWrapper = styled.div`
   text-align: center;
@@ -50,7 +50,7 @@ const AnimatedMessage = styled.p`
   display: inline;
   background: linear-gradient(
     to right,
-    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 100%,
     rgba(255, 185, 33, 1) 52%,
     rgba(0, 0, 0, 1)
   );
