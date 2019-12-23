@@ -1,8 +1,5 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import BagImage from '../assets/travel-bag.png';
-import AppStore from '../assets/appstore.svg';
-import GooglePlay from '../assets/google-play-badge.png';
 import Header from './Header';
 
 const FirstView = () => {
@@ -13,13 +10,6 @@ const FirstView = () => {
         <Message>Finished packing?</Message>
         <AnimatedMessage>Get a Tour Guide!</AnimatedMessage>
       </MessageWrapper>
-      <DownloadWrapper>
-        <GoogleIcon src={GooglePlay} alt="" />
-        <AppleIcon src={AppStore} alt="" />
-      </DownloadWrapper>
-      <ImageWrapper>
-        <Image src={BagImage} />
-      </ImageWrapper>
     </Wrapper>
   );
 };
@@ -62,46 +52,6 @@ const AnimatedMessage = styled.p`
   -webkit-text-fill-color: transparent;
 
   animation: ${Shine} 4s linear infinite;
-`;
-const ImageWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-const Image = styled.img`
-  width: 41%;
-  height: auto;
-  margin-top: -120px;
-  z-index: -1;
-  user-select: none;
-
-  @media (max-width: 980px) {
-    width: 80%;
-    margin-top: -150px;
-  }
-`;
-const DownloadWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
-
-  @media (max-width: 980px) {
-    flex-direction: column;
-  }
-`;
-const GoogleIcon = styled.img`
-  width: 24%;
-  @media (max-width: 980px) {
-    width: 57%;
-  }
-`;
-const AppleIcon = styled.img`
-  width: 19%;
-  @media (max-width: 980px) {
-    width: 50%;
-  }
 `;
 
 export default FirstView;
