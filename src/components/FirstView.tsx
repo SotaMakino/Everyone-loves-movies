@@ -1,6 +1,8 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import Header from './Header';
+import KyotoImage from '../assets/kyoto.png';
+import Footer from './Footer';
 
 const FirstView = () => {
   return (
@@ -9,7 +11,10 @@ const FirstView = () => {
       <MessageWrapper>
         <Message>Finished packing?</Message>
         <AnimatedMessage>Get a Tour Guide!</AnimatedMessage>
+        <Description>a</Description>
       </MessageWrapper>
+      <Image src={KyotoImage} alt="" />
+      <Footer />
     </Wrapper>
   );
 };
@@ -21,14 +26,14 @@ const Wrapper = styled.div`
 `;
 const MessageWrapper = styled.div`
   text-align: center;
-  font-size: 70px;
-  font-weight: 700;
+  font-weight: 900;
   user-select: none;
 `;
 const Message = styled.p`
   color: #000;
-  padding-top: 20px;
-  margin: 20px;
+  font-size: 65px;
+  padding-top: 40px;
+  margin: 0px;
 `;
 const Shine = keyframes`
   to {
@@ -36,7 +41,7 @@ const Shine = keyframes`
   }
 `;
 const AnimatedMessage = styled.p`
-  font-size: 100px;
+  font-size: 85px;
   display: inline;
   background: linear-gradient(
     to right,
@@ -52,6 +57,10 @@ const AnimatedMessage = styled.p`
   -webkit-text-fill-color: transparent;
 
   animation: ${Shine} 4s linear infinite;
+`;
+const Description = styled.p``;
+const Image = styled.img`
+  width: 30%;
 `;
 
 export default FirstView;
