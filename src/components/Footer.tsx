@@ -16,6 +16,7 @@ const Wrapper = styled.div`
   width: 100%;
   padding: 10px;
   color: #4db6ac;
+  font-size: 15px;
 `;
 const Copyright = styled.h4`
   text-align: center;

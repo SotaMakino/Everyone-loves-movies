@@ -37,7 +37,7 @@ const MessageWrapper = styled.div`
 const Message = styled.p`
   color: #000;
   font-size: 72px;
-  padding-top: 40px;
+  padding-top: 25px;
   margin: 0px;
 `;
 const PrimaryMessage = styled.p`

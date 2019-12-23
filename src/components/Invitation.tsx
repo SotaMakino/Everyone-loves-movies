@@ -10,7 +10,7 @@ const Invitation = () => {
       <Image src={KyotoImage} alt="" />
       <ButtonWrapper href="http://m.me/sota.makino">
         <IconImage src={MessengerIcon} alt="" />
-        <ButtonTitle>JOIN MY FREE TRIAL</ButtonTitle>
+        <ButtonTitle>JOIN MY FREE TOUR</ButtonTitle>
       </ButtonWrapper>
     </InvitationWrapper>
   );
@@ -24,7 +24,7 @@ const InvitationWrapper = styled.div`
 `;
 const ButtonWrapper = styled.a`
   display: inline-block;
-  border-radius: 25px;
+  border-radius: 26px;
   margin: 20px 5px 0;
   padding: 10px 45px 0px;
   height: 80px;
@@ -40,9 +40,10 @@ const IconImage = styled.img`
   -webkit-user-drag: none;
 `;
 const ButtonTitle = styled.span`
-  font-size: 26px;
+  font-size: 27px;
   font-weight: 900;
   vertical-align: middle;
+  user-select: none;
 `;
 const Image = styled.img`
   width: 30%;
