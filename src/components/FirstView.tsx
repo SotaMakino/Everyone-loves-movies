@@ -1,8 +1,8 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import Header from './Header';
-import KyotoImage from '../assets/kyoto.png';
 import Footer from './Footer';
+import Invitation from './Invitation';
 
 const FirstView = () => {
   return (
@@ -11,9 +11,13 @@ const FirstView = () => {
       <MessageWrapper>
         <Message>Finished packing?</Message>
         <AnimatedMessage>Get a Tour Guide!</AnimatedMessage>
-        <Description>a</Description>
+        <Description>
+          Come and lean Kyoto in a small group.
+          <tr />
+          Enjoy your trip with knowledge on a guided tour.
+        </Description>
       </MessageWrapper>
-      <Image src={KyotoImage} alt="" />
+      <Invitation />
       <Footer />
     </Wrapper>
   );
@@ -23,6 +27,7 @@ const Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background-color: #fff;
 `;
 const MessageWrapper = styled.div`
   text-align: center;
@@ -58,9 +63,8 @@ const AnimatedMessage = styled.p`
 
   animation: ${Shine} 4s linear infinite;
 `;
-const Description = styled.p``;
-const Image = styled.img`
-  width: 30%;
+const Description = styled.p`
+  font-size: 22px;
 `;
 
 export default FirstView;
