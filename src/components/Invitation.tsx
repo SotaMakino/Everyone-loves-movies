@@ -50,6 +50,10 @@ const IconImage = styled.img`
   margin: 5px;
   user-select: none;
   -webkit-user-drag: none;
+
+  @media (max-width: 980px) {
+    padding: 1% 5% 0 4%;
+  }
 `;
 const ButtonTitle = styled.span`
   font-size: 2vw;
@@ -59,7 +63,7 @@ const ButtonTitle = styled.span`
   word-break: normal;
 
   @media (max-width: 980px) {
-    font-size: 1.5vh;
+    font-size: 1.8vh;
   }
 `;
 
