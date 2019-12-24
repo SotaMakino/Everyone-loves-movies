@@ -10,9 +10,8 @@ const FirstView = () => {
         <Message>Finished packing?</Message>
         <PrimaryMessage>Get a Tour Guide!</PrimaryMessage>
         <Description>
-          Come and lean Kyoto in a small group.
-          <tr />
-          Enjoy your trip with knowledge on a guided tour.
+          Come and lean Kyoto in a small group. Enjoy your trip with knowledge
+          on a guided tour.
         </Description>
       </MessageWrapper>
       <Invitation />
@@ -38,16 +37,21 @@ const MessageWrapper = styled.div`
 `;
 const Message = styled.p`
   color: #000;
-  font-size: 72px;
+  font-size: 4vmax;
   padding-top: 25px;
   margin: 0px;
 `;
 const PrimaryMessage = styled.p`
-  font-size: 85px;
+  font-size: 5vmax;
   margin: 0;
 `;
 const Description = styled.p`
-  font-size: 22px;
+  font-size: 2vmax;
+  padding: 0 300px;
+
+  @media (max-width: 980px) {
+    padding: 0 150px;
+  }
 `;
 
 export default FirstView;

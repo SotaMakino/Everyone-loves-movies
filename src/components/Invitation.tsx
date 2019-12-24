@@ -39,7 +39,7 @@ const ButtonWrapper = styled.a`
   text-decoration: none;
 
   @media (max-width: 980px) {
-    width: 50%;
+    width: 58%;
   }
 `;
 const IconImage = styled.img`

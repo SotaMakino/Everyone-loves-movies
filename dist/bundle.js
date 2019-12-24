@@ -55,15 +55,20 @@ object-assign
   user-select: none;
 `,c=i.default.p`
   color: #000;
-  font-size: 72px;
+  font-size: 4vmax;
   padding-top: 25px;
   margin: 0px;
 `,s=i.default.p`
-  font-size: 85px;
+  font-size: 5vmax;
   margin: 0;
 `,f=i.default.p`
-  font-size: 22px;
-`;t.default=()=>A.default.createElement(l,null,A.default.createElement(u,null,A.default.createElement(c,null,"Finished packing?"),A.default.createElement(s,null,"Get a Tour Guide!"),A.default.createElement(f,null,"Come and lean Kyoto in a small group.",A.default.createElement("tr",null),"Enjoy your trip with knowledge on a guided tour.")),A.default.createElement(a.default,null),A.default.createElement(o.default,null))},function(e,t,n){"use strict";var r=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(t,"__esModule",{value:!0});const A=r(n(0)),i=r(n(1)),o=i.default.div`
+  font-size: 2vmax;
+  padding: 0 300px;
+
+  @media (max-width: 980px) {
+    padding: 0 150px;
+  }
+`;t.default=()=>A.default.createElement(l,null,A.default.createElement(u,null,A.default.createElement(c,null,"Finished packing?"),A.default.createElement(s,null,"Get a Tour Guide!"),A.default.createElement(f,null,"Come and lean Kyoto in a small group. Enjoy your trip with knowledge on a guided tour.")),A.default.createElement(a.default,null),A.default.createElement(o.default,null))},function(e,t,n){"use strict";var r=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(t,"__esModule",{value:!0});const A=r(n(0)),i=r(n(1)),o=i.default.div`
   position: fixed;
   left: 0;
   bottom: 0;
@@ -95,7 +100,7 @@ object-assign
   text-decoration: none;
 
   @media (max-width: 980px) {
-    width: 50%;
+    width: 58%;
   }
 `,s=i.default.img`
   width: 18%;
