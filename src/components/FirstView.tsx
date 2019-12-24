@@ -1,13 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from './Header';
 import Footer from './Footer';
 import Invitation from './Invitation';
 
 const FirstView = () => {
   return (
     <Wrapper>
-      <Header />
       <MessageWrapper>
         <Message>Finished packing?</Message>
         <PrimaryMessage>Get a Tour Guide!</PrimaryMessage>
@@ -28,6 +26,10 @@ const Wrapper = styled.div`
   height: 100vh;
   overflow: hidden;
   background-color: #a7ffeb;
+
+  @media (max-width: 980px) {
+    padding-top: 120px;
+  }
 `;
 const MessageWrapper = styled.div`
   text-align: center;

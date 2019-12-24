@@ -25,8 +25,8 @@ const Logo = styled.p`
   user-select: none;
 
   @media (max-width: 980px) {
-    font-size: 60px;
-    padding-top: 50px;
+    font-size: 40px;
+    padding-top: 40px;
   }
 `;
 
