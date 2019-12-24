@@ -23,13 +23,13 @@ const InvitationWrapper = styled.div`
   margin-right: 70px;
 `;
 const ButtonWrapper = styled.a`
-  display: inline-block;
-  border-radius: 26px;
-  margin: 20px 5px 0;
-  padding: 10px 45px 0px;
-  height: 80px;
   color: #000;
-  background-color: #fa8c73;
+  background-color: #fff;
+  margin: 20px 5px 0;
+  padding: 5px 37px 5px;
+  line-height: 77px;
+  border: 3px solid #000;
+  border-radius: 20px;
   text-decoration: none;
 `;
 const IconImage = styled.img`
