@@ -59,7 +59,7 @@ const ButtonTitle = styled.span`
   word-break: normal;
 
   @media (max-width: 980px) {
-    font-size: 2vh;
+    font-size: 1.5vh;
   }
 `;
 
