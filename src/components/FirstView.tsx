@@ -10,14 +10,9 @@ const FirstView = () => {
         <Message>Finished packing?</Message>
         <PrimaryMessage>Get a Tour Guide!</PrimaryMessage>
         <Description>
-<<<<<<< HEAD
-          Come and lean Kyoto in a small group. Enjoy your trip with knowledge
-          on a guided tour.
-=======
           Come and learn Kyoto in a small group.
           <tr />
           Enjoy your trip with knowledge on a guided tour.
->>>>>>> a60656761dca94b4541412c0333459c3b45fd16c
         </Description>
       </MessageWrapper>
       <Invitation />
